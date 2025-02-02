@@ -1,0 +1,307 @@
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: 'Empirica-bold';
+    src: url(EmpiricaTRIALHeadline-Bold-BF6566979434cf6.otf);
+  }
+
+  @font-face {
+    font-family: 'Empirica-reg';
+    src: url(EmpiricaTRIALHeadline-Regular-BF65669793eefe9.otf);
+  }
+
+  @font-face {
+    font-family: 'Lexend';
+    src: url(Lexend-VariableFont_wght.ttf);
+  }
+
+  .audio {
+    position:fixed;
+    top: 20;
+    right: 0;
+  }
+
+  .container{
+    position: relative;
+    height: 100vh;
+  }
+
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+
+  .header img{
+    width: 15%;
+  }
+
+
+  .sub-container{
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    justify-content:center;
+    flex-wrap: wrap;
+    height: 80vh;
+  }
+
+  .left-sub{
+    width: 40%;
+    padding: 3em;
+    /* background-color: beige; */
+    height: 80%;
+  }
+
+  .left-sub h2{
+    font-family: 'Empirica-bold';
+    color: #8E1023;
+  }
+
+  .left-sub p{
+    font-family: 'Lexend';
+    color: #231F20;
+    line-height: 1.5em;
+    width: 80%;
+  }
+
+  .left-sub p:nth-child(4){
+    color: #8E1023;
+  }
+
+  .buttons{
+    padding-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .buttons img{
+    width: 20%;
+  }
+
+  .buttons-1:nth-child(2){
+    padding-left: 1em;
+  }
+  
+  .right-sub{
+    width: 40%;
+    /* background-color: bisque; */
+    height: 80%;
+  }
+
+  .right-sub img{
+    width: 100%;
+  }
+
+  .section{
+    /* background-color: #8E1023; */
+    /* background-image: url('img/Untitled_Artwork.png');
+    background-size: auto 100%; */
+    height: 90vh;
+    padding: 3em;
+    display: flex;
+    flex:none;
+    justify-content: flex-start;
+    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .sec-text{
+    /* background-color: aqua; */
+    min-width: 70%;
+  }
+
+  .sec-text h2{
+    font-family: 'Empirica-bold';
+    font-size: 3rem;
+    color: #8E1023;
+  }
+
+  .sec-text p{
+    font-family: 'Lexend';
+  }
+
+  .obj-1{
+    /* background-color: aqua; */
+    height: 100%;
+    min-width: 50%;
+    margin-left: 10%;
+  }
+
+  .obj-1 img{
+    width: 50%;
+  }
+
+  .lang{
+    display: none;
+  }
+
+  .tilted{
+    transform: rotate(5deg);
+  }
+
+  .tilted-s{
+    transform: rotate(2deg);
+  }
+
+  .tilted-neg{
+    transform: rotate(-5deg);
+  }
+
+  .obj-1 h2{
+    font-family: 'Empirica-bold';
+    font-size: 1.8rem;
+    color: #8E1023;
+  }
+
+  .obj-1 p{
+    font-family: 'Lexend';
+    font-size: 0.8rem;
+  }
+
+  .buttons-1{
+    width: 30%;
+  }
+
+  .buttons-1:hover .st0{
+    fill: #8E1023;
+    cursor: pointer;
+  }
+
+  .buttons-1:hover .text-st{
+    fill: #fff;
+    cursor: pointer;
+  }
+
+  #video-overlay{
+    display: none;
+    position: absolute;
+    width: 60%;
+    padding: 2em;
+    background-color: #8E1023;
+    border-radius: 2%;
+    margin-top: -2%;
+  }
+
+
+  #video-overlay video{
+    width: 100%;
+  }
+
+  #video-overlay p{
+    color: #fff;
+    font-family: 'Lexend';
+    padding: 0;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    .header{
+      height: 15vh ;
+    }
+    
+    .header img{
+      width: 40%;
+    }
+
+    .sub-container{
+      flex-direction: column-reverse;
+      flex-wrap: nowrap;
+      /* background-color: aqua; */
+    }
+
+    .right-sub{
+      width: 100%;
+      /* background-color: beige; */
+    }
+
+    .left-sub{
+      padding: 0;
+      width: 100%;
+      /* background-color: aquamarine; */
+    }
+
+    .left-sub h2{
+      font-size: 1em;
+    }
+
+    .left-sub p{
+      font-size: 0.5em;
+      width: 100%;
+      text-align: justify;
+    }
+
+    .buttons{
+      justify-content: center;
+    }
+
+    .buttons img{
+      width: 30%;
+    }
+
+    .section{
+      align-items: flex-start;
+    }
+
+
+    /* .sec-bg img{
+      height: 100%;
+      width: 10%;
+    } */
+
+    .sec-text{
+      width: 100%;
+      position: sticky;
+      top: 5%;
+    }
+
+    .sec-text h2{
+      font-size: 1.8rem;
+    }
+
+    .sec-text p{
+      font-size: 0.8rem;
+    }
+
+    .obj-1{
+      min-width: 100%;
+      margin-left: 20%;
+    }
+
+    .obj-1 img{
+      width: 100%;
+    }
+
+    .obj-1 h2{
+      font-family: 'Empirica-bold';
+      font-size: 1.8rem;
+      color: #8E1023;
+    }
+
+    .obj-1 p{
+      font-family: 'Lexend';
+      font-size: 0.8rem;
+    }
+
+    #video-overlay{
+      width: 80%;
+      padding: 10px;
+      margin-top: -100%;
+    }
+
+    #video-overlay p{
+      font-size: 0.5em;
+    }
+
+  }

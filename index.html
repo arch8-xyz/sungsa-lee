@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <title>Sungsa Lee</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- <audio id="audio_playo24" loop autoplay>
+            <source src="night_sounds.mp3" type="audio/mp3"  />
+         </audio>
+         <a href="javascript:void(0);" class="audio" onclick="toggleMute()">&#128362;</a> -->
+        <!-- <div id="hero-area">sungsalee</div>
+        <div id="content1">North</div>
+        <div id="content2">East</div>
+        <div id="content3">South</div>
+        <div id="content4">West</div>
+        <div id="content5">North-east</div>
+        <div id="content6">South-east</div>
+        <div id="content7">South-west</div>
+        <div id="content8">North-west</div> -->
+        <div class="header"><img src="NewLogo.png" alt=""></div>
+        <div class="sub-container">
+            <div class="left-sub">
+                <h2>Welcome to the House of Stories</h2>
+                <p>Imagined as a community living-knowledge ecosystem with a museum at its heart, 'sungsa lee'(or house of stories) aims to document, collate, preserve and nurture the Lepcha identity, history and practices while promoting sustainable livelihood through responsible tourism in Lower Dzongu.</p>
+                <p>While led by Seela Abhigail Lepcha, this initiative has wholeheartedly been supported by, driven by, physically built by, and run by the community of Gnon-Sangdong. From donations of land to building materials to food to labour to love - the community volunteers and champions this project through a collaborative and transparent process, and it continues to take shape through their efforts.</p>
+                <p>This project is supported by Royal Enfield and GreenHub.</p>
+                <div class="buttons">
+                    <!-- <img src="button-1.png" alt="">
+                    <img src="button-2.png" alt=""> -->
+                        <div class="buttons-1" onclick="myFunction()">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 504.57 166.86" style="enable-background:new 0 0 504.57 166.86;" xml:space="preserve">
+                        <style type="text/css">
+                        .st0{fill:#fff;stroke:#8E1023;stroke-width:10;stroke-miterlimit:10;} .text-st{font-family: 'Empirica-bold'; fill: #8E1023; font-size: 3rem;}</style>
+                    <polygon class="st0" points="37,5 472.14,5 467.95,44.62 499.57,44.62 499.57,123 467.19,123 472.9,161.86 33.95,161.86 
+                        40.05,123.76 5,123.76 5,46.52 40.05,46.52 "/>
+                        <text x="185" y="100" class="text-st">Video</text>
+                    </svg>
+                        </div>
+                        <div class="buttons-1" onclick="window.location.href='https://www.ketto.org/fundraiser/sungsalee-co-create-a-lepcha-living-museum-build-a-collective-legacy?utm_source=external_Ketto&utm_medium=google-search&utm_term=e_ketoo&utm_content=medical_resp_ad2&utm_campaign=S14_1000_SALE_Brand_KY_ALL_CLK_IND&utm_placement=KT01_AG_1865_BrandSeed_Pure';">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 504.57 166.86" style="enable-background:new 0 0 504.57 166.86;" xml:space="preserve">
+                        <style type="text/css">
+                        .st0{fill:#fff;stroke:#8E1023;stroke-width:10;stroke-miterlimit:10;} .text-st{font-family: 'Empirica-bold'; fill: #8E1023; font-size: 3rem;}</style>
+                    <polygon class="st0" points="37,5 472.14,5 467.95,44.62 499.57,44.62 499.57,123 467.19,123 472.9,161.86 33.95,161.86 
+                        40.05,123.76 5,123.76 5,46.52 40.05,46.52 "/>
+                        <text x="185" y="100" class="text-st">Support</text>
+                    </svg>
+                        </div>
+                </div>
+            </div>
+
+            <div id="video-overlay">
+                <p onclick="myFunction()">[close]</p>
+                <video controls>
+                    <source src="Sungsa Lee 2cut.mp4" />
+                </video>
+                
+            </div>
+
+            <div class="right-sub">
+                
+                    <img src="house-1.png" alt="">
+                    
+
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="map-text">
+                <h1>We are building a place of learning, memory and our collective community efforts.</h1>
+                <p>Most of our stories , much like our lives, have connections with actual physical points around Dzongu and thus our museum is not just limited to one space but would activate the many narrative points within the region and build relationality with people, placed to the objects kept in the museum- thus bringing new meaning to what a museum is. </p>
+                <p>Explore the interactive map alongside, where each marker represents a living story, significant site, or the vibrant people who contribute to our collective narrative.</p>
+            </div>
+        </div>
+        
+        
+
+        <section class="section">
+            <div class="sec-text">
+                <h2>From everyday items to extraordinary artefacts, every piece holds a narrative, a testament to the lives lived, the traditions upheld, and the moments cherished by our diverse community.</h2>
+                <p>Scroll to see community artefacts</p> &rarr;
+            </div>
+            
+            <div class="obj-1">
+                <img class="tilted" src="Tungbuk.jpeg" alt="">
+                <h2>Tung Buk</h2>
+                <p>Tungbuk is a well known Lepcha musical instrument. Many Lepcha songs are carried over the deep, woody notes of the Tungbuk and resonate across the mountains.</p>
+                <p>Tung-buk or Tumbok is carved out of a single piece of soft wood. Animal hide, commonly goat hide, is stretched over the face of the rounded, hollowed out base. 3 holes are punctured into the hide for the base reverberations.</p>
+                <p>A tung-buk typically has 3 strings, but 4-stringed versions are not uncommon. The strings are attached to a corresponding number of tuning pegs at the head and tightened over a bridge. In the past, these were made of a fibre pulled from stinging nettle, but these days are usually made of nylon. The instrument is finger plucked or uses a bamboo plectrum.</p>
+                <p>A woven band maybe attached to the tungbuk for it to be hung over the shoulder, much like a guitar strap.</p>
+                <p>The 4- stringed tungbuk pictured here belongs to Kinga Lepcha from Gnon.</p>
+                <p class="lang">तुङबुक एक प्रसिद्ध लेप्चा संगीत वाद्ययंत्र हो। धेरै लेप्चा गीतहरू तुङबुकको गहिरो, काठको नोटमा बोकेका छन् र पहाडहरूमा गुन्जिन्छन्।
+
+                    टुंग-बुक वा टुम्बोक नरम काठको एक टुक्राबाट कोरिएको छ। जनावरको छाला, सामान्यतया बाख्राको छाला, गोलाकार, खोक्रो आधारको अनुहारमा फैलिएको हुन्छ। 3 प्वालहरू आधार रिभरबरेसनहरूको लागि लुकाइमा पङ्चर गरिएका छन्।
+                    
+                    तुङ-बुकमा सामान्यतया ३ वटा स्ट्रिङ हुन्छन् तर ४ स्ट्रिङ भएका संस्करणहरू असामान्य छैनन्। तारहरू टाउकोमा ट्युनिंग पेगहरूको अनुरूप संख्यामा जोडिएका छन् र पुलमा कसिएका छन्। विगतमा, यी स्टिङिंग नेटलबाट तानिएको फाइबरबाट बनेको थियो, तर आजकल सामान्यतया नायलनबाट बनाइन्छ। उपकरण औँला निकालिएको हो वा बाँसको प्लेक्ट्रम प्रयोग गरिन्छ।
+                    
+                    गिटारको स्ट्र्याप जस्तै काँधमा झुण्ड्याउनको लागि टुङ्बुकमा बुनेको ब्यान्ड जोडिएको हुन सक्छ।
+                    
+                    यहाँ चित्रित 4-तार भएको तुङबुक ग्नोनका किंगा लेप्चाको हो।
+                    </p>
+            </div>
+
+            <div class="obj-1">
+                <h2>Sumok Thyaktuk</h2>
+                <p>Sumok thyaktuk is the traditional Lepcha bell-shaped hat. It was the official headgear of the royal soldiers the regime of Chogyal dynasty in Sikkim, and wearing Sumok thyaktuk is still in practice even today. It is considered an important part of the Lepcha identity and is worn during marriage ceremonies, Lepcha and Buddhist festivals, and by community elders.
+                </p>
+                <p>Sumok thyaktuk is one of the oldest documented material crafts of the community. The hat is intricately hand woven with thin strips of Ru or cane (Calamus acanthospathus) and Po-young or small bamboo (Cephalostachyum capitatum). A Sumok thyaktuk requires finess and craftsmanship and thus it can take upto a month to weave a single hat!
+                </p>
+
+                <img class="tilted" src="sunok thyaktuk.png" alt="">
+            </div>
+
+            <div class="obj-1">
+                <img class="tilted-neg" src="lufu phengbo .jpeg" alt="">
+                <h2>Lufu Phengbo</h2>
+                <p>Lufu Phengbo is a collection of various wild animals and birds strung together and used by Lepcha monks, bumthing/ bongthing, for spiritual and medicinal purpose for curing various diseases. A Lufu Phengbo can only be possessed and used by a practioner and it is passed down from bumthing to bumthing only, each time one is reincarnated. A Bumthing may add their own elements to the collection as they see appropriate. </p>
+                <p>This Lufu Phengbo belongs to Tshring Lepcha (Bumthing in Sangdong). It contains the dried foot of a chicken, a part of the shell of the tortoise, shells, beak of a vulture among other things.                </p>
+            </div>
+
+            <div class="obj-1">
+                <h2>Rung gow</h2>
+                <p>Rung Gow is a stone grinder used mainly for making millet flour. It is commonly placed in the outer courtyard of the Lepcha house, Ronglee. Coarse millets or cereals are placed between the to stones and ground to powder by rotating the top stone using the wooden handle.                </p>
+                <p>This rung gow pictured here has stood in Dukboo Lepcha’s courtyard in Gnon  for generations?? </p><br>
+                <img  class="tilted-s" src="Rung - gow.JPG" alt="">
+            </div>
+
+            <div class="obj-1">
+                <img class="tilted-s" src="Bamphok.jpg" alt="">
+                <h2>Bamphok or Bentok</h2>
+                <p>The traditional Lepcha knife</p>
+                <p>A Bentok is a common utility knife that has multiple everyday usages. It has an iron blade with a wooden handle and is encased in a wood sheath. Most Lepcha tie their Bentok  around their waist as they go about their day in the field, in the forest or at home to keep it handy. The Bentok is handy for cutting grass in the field, and also for cutting firewood, twigs, branches, splitting bamboo and cane, and also for meat. </p>
+                <p>This bentok belongs to Naku Tshering Lepcha in Gnon. The woven strap carries the Lepcha weave and colours. </p>
+            </div>
+            
+        </section>
+
+        <hr width="60%">
+
+        <div class="footer">
+            <div class="footer-logo"><img src="NewLogo.png" alt=""></div>
+            <div class="footer-text">
+                <p>‘Mutanchi Rong Kup Achulay !’ </p>
+                <p>'sungsalee' has been brought to life through the efforts of documentary film-maker Seela Abigail Lepcha, Green Hub x Royal Enfield Conservation Grants and collective efforts of the people from Gnon-Sangdong, Dzongu.  </p>
+                <p><a href="#">Support our crowdfunding effort</a></p>
+                <p><a href="#">Follow us on Instagram</a></p>
+            </div>
+        </div>
+        
+    </div>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
